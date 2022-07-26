@@ -25,4 +25,6 @@ restful:存放JsonResult即返回信息跟ResultCode状态码
 
 业务层:service
 
+持久层:mapper
+
 配置文件已配置
