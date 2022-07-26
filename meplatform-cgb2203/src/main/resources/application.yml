@@ -12,7 +12,7 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   #定位数据库xml位置
   mapper-locations=classpath:mapper/*:
-xml:#日志输出限制等级,目前为trace
+#日志输出限制等级,目前为trace
 logging:
   level:
     com:
