@@ -1,0 +1,28 @@
+应用版本:2.5.9
+暂时框架:spring mvc
+        mybatis 版本2.2.0,
+        mysql驱动 版本8.0.29,
+        在线api文档应用knife4j 版本2.0.9,
+        日志lombok 版本 1.18.20,
+        权限security框架,
+        jjwt数据加密 版本 0.9.1
+配置文件:configuration文件夹:
+                            Knife4jConfiguration:在线文档调用配置,已配置完无需动用
+                            MybatisConfiguration:mapper数据库配置,已配置完无需动用
+                            SecurityConfiguration:暂时未写到,先注释掉不用动
+                            WebMvcConfiguration:跨域配置,暂时未动用,先注释掉
+表现层:controller
+
+全局异常:
+
+数据库:
+
+pojo:封装对象 entity:实体类
+            vo:查询类
+            dto:增删改类
+
+restful:存放JsonResult即返回信息跟ResultCode状态码
+
+业务层:service
+
+配置文件已配置
