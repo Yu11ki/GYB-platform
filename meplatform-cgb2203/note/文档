@@ -28,3 +28,5 @@ restful:存放JsonResult即返回信息跟ResultCode状态码
 持久层:mapper
 
 配置文件已配置
+
+test:数据库外网 rm-bp17816791n2cr60gwo.mysql.rds.aliyuncs.com 账号root 密码 Root!001 MySqlConnectTest连接成功
