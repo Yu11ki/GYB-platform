@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
-
+//数据库employ测试连接
 @SpringBootTest
 @Slf4j
 public class MySqlConnectTest {
