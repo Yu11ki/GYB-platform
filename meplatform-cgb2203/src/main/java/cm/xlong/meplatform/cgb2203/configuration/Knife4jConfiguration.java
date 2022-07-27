@@ -36,7 +36,7 @@ public class Knife4jConfiguration {
     /**
      * 主机名
      */
-    private String host = "http://java.xlong.com";
+    private String host = "http://java.gyb.com";
     /**
      * 标题
      */
