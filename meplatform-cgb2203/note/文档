@@ -27,6 +27,8 @@ restful:存放JsonResult即返回信息跟ResultCode状态码
 
 持久层:mapper
 
+restful:暂时设置3个状态代码具体看注释,返回结果ok写了三种重载分别是无参数,单参数String,双参数String,data
+
 配置文件已配置
 
 test:数据库外网 rm-bp17816791n2cr60gwo.mysql.rds.aliyuncs.com 账号root 密码 Root!001 MySqlConnectTest连接成功
