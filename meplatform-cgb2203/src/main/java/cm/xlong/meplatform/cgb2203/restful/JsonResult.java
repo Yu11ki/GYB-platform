@@ -2,10 +2,13 @@ package cm.xlong.meplatform.cgb2203.restful;
 
 
 
+import cm.xlong.meplatform.cgb2203.exception.ServiceException;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+
+
 
 /**
  * 通用响应对象
@@ -55,6 +58,28 @@ public class JsonResult<T> implements Serializable {
         jsonResult.setData(data);
         jsonResult.setMessage(message);
         return jsonResult;
+    }
+
+    /**
+     *失败时返回的失败提示消息和状态码
+     * @param message   返回消息
+     * @param serviceCode 状态代码
+     * @return
+     */
+    public static JsonResult fail(String message,Integer serviceCode){
+        JsonResult jsonResult = new JsonResult();
+        jsonResult.message=message;
+        jsonResult.state=serviceCode;
+        return jsonResult;
+    }
+
+    /**
+     * 全局异常返回的失败信息,调用上面的fail的方法以简化方法
+     * @param e 全局异常
+     * @return
+     */
+    public static JsonResult fail(ServiceException e){
+        return fail(e.getMessage(),e.getServiceCode());
     }
 
 

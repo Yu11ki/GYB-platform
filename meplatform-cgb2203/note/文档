@@ -13,7 +13,7 @@
                             WebMvcConfiguration:跨域配置,暂时未动用,先注释掉
 表现层:controller
 
-全局异常:
+全局异常:暂时添加一个ServiceException全局异常
 
 数据库:
 
@@ -28,6 +28,8 @@ restful:存放JsonResult即返回信息跟ResultCode状态码
 持久层:mapper
 
 restful:暂时设置3个状态代码具体看注释,返回结果ok写了三种重载分别是无参数,单参数String,双参数String,data
+                                        7/28 添加了fail返回结果,参数为message,serviceCode(String,Integer),
+                                        还有个重载参数为ServiceException,返回值为调用前面那个fail方法
 
 配置文件已配置
 
