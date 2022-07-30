@@ -197,7 +197,7 @@ CREATE TABLE `user_detail` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `wallet`
+-- Table structure for `Wallet`
 -- ----------------------------
 DROP TABLE IF EXISTS `wallet`;
 CREATE TABLE `wallet` (
@@ -208,5 +208,5 @@ CREATE TABLE `wallet` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='钱包';
 
 -- ----------------------------
--- Records of wallet
+-- Records of Wallet
 -- ----------------------------

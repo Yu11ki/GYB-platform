@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 钱包
  */
 @Data
-public class wallet implements Serializable {
+public class Wallet implements Serializable {
     /**
      * 钱包ID
      */
