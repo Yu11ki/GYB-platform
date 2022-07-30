@@ -28,5 +28,5 @@ public class AdminRole implements Serializable {
      * 审核管理员
      */
     @ApiModelProperty(value = "审核管理员",required = true)
-    private Integer adminCherker;
+    private Integer adminChecker;
 }
