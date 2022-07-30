@@ -6,7 +6,7 @@ mybatis:
   configuration:
     # 禁用缓存
     cache-enabled: false
-    # 配置映射驼峰命名法,数据库中user_name的字段,会映射在java的userName属性上
+    # 配置映射驼峰命名法,如数据库中user_name的字段,会映射在java的userName属性上
     map-underscore-to-camel-case: true
     # 将运行的sql语句输出到控制台
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

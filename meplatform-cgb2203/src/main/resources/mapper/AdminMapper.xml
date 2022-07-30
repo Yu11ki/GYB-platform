@@ -7,6 +7,8 @@
         from admin join admin_role on admin.id = admin_id
         where admin_name = #{adminName}
     </select>
-    <resultMap id="AdminAndRole" type="cm.xlong.meplatform.cgb2203.pojo.vo.AdminLoginVO"
+    <resultMap id="AdminAndRole" type="cm.xlong.meplatform.cgb2203.pojo.vo.AdminLoginVO">
+        <id column="id" property="id" />
+    </resultMap>
 
 </mapper>
