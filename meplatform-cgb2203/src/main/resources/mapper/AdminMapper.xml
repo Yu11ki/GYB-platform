@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cm.xlong.meplatform.cgb2203.mapper.AdminMapper">
+    <select id="selectByAdminName" resultMap="AdminAndRole">
+        select id,admin_pw,root,admin_finance,admin_checker
+        from admin join admin_role on admin.id = admin_id
+        where admin_name = #{adminName}
+    </select>
+    <resultMap id="AdminAndRole" type="cm.xlong.meplatform.cgb2203.pojo.vo.AdminLoginVO"
+
+</mapper>
